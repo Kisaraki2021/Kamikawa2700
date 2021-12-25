@@ -1,0 +1,80 @@
+{
+
+"trainName": "kamikawa2700_1",
+"trainType": "EC",
+
+"trainModel2": {
+	"modelFile": "kamikawa2700/1_mc1.mqo",
+	"textures": [
+		["mat1", "textures/train/kamikawa2700/1.png", "Light"],
+		["mat2", "textures/train/kamikawa2700/parts.png"],
+		["mat3", "textures/train/kamikawa2700/alpha.png", "AlphaBlend"],
+		["ATS", "textures/train/ATS/ATS_PANEL.png", "AlphaBlend,Light"]
+	],
+				"rendererPath": "scripts/Render_kamikawa2700.js"
+},
+
+
+"bogieModel2": {
+	"modelFile": "kamikawa2700/bogie.mqo",
+	"textures": [["default", "textures/train/kamikawa2700/bogie.png"]],
+	"rendererPath": "scripts/Render_kamikawa2700_bogie.js"
+},
+
+"buttonTexture": "textures/train/kamikawa2700/button/Mc.png",
+
+
+"rollsignTexture": "textures/train/kamikawa2700/sign.png",
+"rollsignNames": [
+ "01",
+ "02",
+ "03",
+ "04",
+ "05",
+ "06",
+ "07",
+ "08",
+ "09",
+ "10"],
+
+  "rollsigns": [
+    {
+      "uv": [0.0, 1.0, 0.0, 1.0],
+      "pos": [[[1.38, 2.18, -0.28], [1.38, 2.04, -0.28], [1.38, 2.04, 0.28], [1.38, 2.18, 0.28]],
+	      [[-1.38, 2.18, 0.28], [-1.38, 2.04, 0.28], [-1.38, 2.04, -0.28], [-1.38, 2.18, -0.28]]],
+      "doAnimation": false
+	},
+	{
+		"uv": [0.0, 1.0, 0.0, 1.0],
+		"pos": [[[0.39, 2.44, 9.76], [0.39, 2.21, 9.76], [-0.39, 2.21, 9.76], [-0.39, 2.44, 9.76]]],
+		"doAnimation": false
+	  }
+
+  ],
+
+  "seatPos": [
+	[12, 0, 130, 2], [12, 0, 110, 2], [12, 0, 90, 2], [12, 0, 70, 2], [12, 0, 50, 2], [12, 0, 30, 2], [12, 0, 10, 2],
+	[12, 0, -130, 2], [12, 0, -110, 2], [12, 0, -90, 2], [12, 0, -70, 2], [12, 0, -50, 2], [12, 0, -30, 2], [12, 0, -10, 2],
+	[-12, 0, 130, 2], [-12, 0, 110, 2], [-12, 0, 90, 2], [-12, 0, 70, 2], [-12, 0, 50, 2], [-12, 0, 30, 2], [-12, 0, 10, 2],
+	[-12, 0, -130, 2], [-12, 0, -110, 2], [-12, 0, -90, 2], [-12, 0, -70, 2], [-12, 0, -50, 2], [-12, 0, -30, 2], [-12, 0, -10, 2]
+],
+
+"customButtons": [["W51","Nomal"]],
+
+"soundScriptPath": "scripts/sound_223.js",
+"sound_BrakeRelease": "train.rtm_223_release",
+"sound_BrakeRelease2": "train.brakeR_w",
+"sound_Horn": "train.rtm_wh_00l",
+"sound_DoorOpen": "sound_mcta_mi:train.rtm_mcta_doorclose_mi",
+"sound_DoorClose": "sound_mcta_mi:train.rtm_mcta_dooropen_mi",
+"doCulling": true,
+"renderLight": true,
+"smoothing": true,
+"playerPos": [[0.85, 0.2, 8.80], [0.0, 0.2, -8.95]],
+"bogiePos": [[0.0, 0.0, 6.8], [0.0, 0.0, -6.8]],
+"accelerateion" : 0.0024304,
+"maxSpeed": [0.44, 0.89, 1.33, 1.78, 2.22],
+"trainDistance": 10.0,
+"rolling": 0.3,
+"tags": "kisaraki kamikawa2700"
+}
