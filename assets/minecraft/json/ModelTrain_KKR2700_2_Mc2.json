@@ -9,7 +9,7 @@
 		["mat1", "textures/train/kamikawa2700/1.png", "Light"],
 		["mat2", "textures/train/kamikawa2700/parts.png"],
 		["mat3", "textures/train/kamikawa2700/alpha.png", "AlphaBlend"],
-		["ATS", "textures/train/ATS/ATS_PANEL.png", "AlphaBlend,Light"]
+		["ATS", "textures/train/K-ATS/ATS_PANEL.png", "AlphaBlend,Light"]
 	],
 				"rendererPath": "scripts/Render_kamikawa2700.js"
 },
@@ -21,7 +21,7 @@
 	"rendererPath": "scripts/Render_kamikawa2700_bogie.js"
 },
 
-"buttonTexture": "textures/train/kamikawa2700/button/Mc.png",
+"buttonTexture": "textures/train/kamikawa2700/button/Mc2.png",
 
 
 "rollsignTexture": "textures/train/kamikawa2700/sign.png",
