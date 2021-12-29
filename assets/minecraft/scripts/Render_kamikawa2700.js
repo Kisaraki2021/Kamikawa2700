@@ -301,7 +301,7 @@ function render_Monitor_1(entity){
 	var speed = Math.ceil(entity.getSpeed() * 72);
 
 //1段目
-if (1 <= signal && signal <= 16){
+if (1 <= signal && signal <= 17){
 	K_ATS.render(renderer);
 } 
 else {
@@ -351,7 +351,7 @@ if ((signal == 1 && speed > 0) ||
 	{
 		ATS_B.render(renderer);
 	}
-if (signal == 15) {
+if (signal == 18) {
 	ATS_PA.render(renderer);
     }
 }
