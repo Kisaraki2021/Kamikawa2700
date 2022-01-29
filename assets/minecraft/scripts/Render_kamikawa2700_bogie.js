@@ -11,22 +11,22 @@ function init (par1, par2)
 
 function render(entity, pass, par3)
 {
-	GL11.glPushMatrix();
-	
-	var f0 = renderer.getWheelRotationR(entity);
+	var r0 = renderer.getWheelRotationR(entity);
     var y0 = -0.5427
     var z1 = 1.05
     var z2 = -1.05
 
+	GL11.glPushMatrix();
+
 	frame.render(renderer);
 
 	GL11.glPushMatrix();
-	renderer.rotate(f0, 'X', 0, y0, z1);
+	renderer.rotate(r0, 'X', 0, y0, z1);
 	wheel1.render(renderer);
 	GL11.glPopMatrix();
 
 	GL11.glPushMatrix();
-	renderer.rotate(f0, 'X', 0, y0, z2);
+	renderer.rotate(r0, 'X', 0, y0, z2);
 	wheel2.render(renderer);
 	GL11.glPopMatrix();
 
