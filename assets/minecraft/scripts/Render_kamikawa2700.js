@@ -57,6 +57,18 @@ function init(par1, par2)
 	L160 = renderer.registerParts(new Parts("L160"));
 }
 
+//##### MCVersion取得##########
+importPackage(Packages.jp.ngt.rtm);
+function MCVersionChecker() {
+    var varsion = RTMCore.VERSION;
+    if (varsion.indexOf("1.7.10") >= 0) return "1.7.10";
+    else if (varsion.indexOf("2.0") >= 0) return "1.8.9";
+    else if (varsion.indexOf("2.1") >= 0) return "1.9.4";
+    else if (varsion.indexOf("2.2") >= 0) return "1.10.2";
+    else if (varsion.indexOf("2.4") >= 0) return "1.12.2";
+    else return "unknown";
+}
+
 //##### 号車取得 ####################
 function isMiddleCar(entity){
 	var formation = entity.getFormation();
@@ -74,26 +86,31 @@ function isMiddleCar(entity){
   }
 
   //##### 隣接車両取得 ####################
-  function isFrontNextCar(entity){
+function isFrontNextCar(entity){
 	  var frontNext = entity.getConnectedTrain(0);
 		if(frontNext==null){
 		  return false;
 		}else{
 		  return true;
 		}
-  }
+}
 
-  //#### カスタムボタン情報取得 ############
-  function getKeyState(entity, key){
+//#### カスタムボタン情報取得 ############
+function getKeyState(entity, key){
 	if(entity == null) return;
+	var MCVer = MCVersionChecker();
 
 	if(!entity.isControlCar()){
 		var formation = entity.getFormation();
 		if(formation == null) return;
-		var ctrlCar = NGTUtil.getMethod(formation.getClass(), formation, "getControlCar", null, []);
+
+		if(MCVer == "1.7.10"||MCVer == "1.8.9"||MCVer == "1.9.4") var ctrlCar = NGTUtil.getMethod(formation.getClass(), formation, ["getControlCar"], []); //編成中のレバーサーが前になっている車両のEntityTrainBaseを取得(privateメソッドなのでNGTUtil.getMethodで取得)
+		else var ctrlCar = NGTUtil.getMethod(formation.getClass(), formation, "getControlCar", null, []);
+
 		if(ctrlCar == null) return;
 		var ctrlCarState = ctrlCar.getResourceState().getDataMap().getInt(key);
 		return ctrlCarState;
+
 	}else{
 		var keyState = entity.getResourceState().getDataMap().getInt(key);
 		return keyState;
