@@ -15,15 +15,14 @@
 - [KaizPatch 1.7.10](https://github.com/Kai-Z-JP/KaizPatchX) + 前提Mod([Forge](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.7.10.html)) + [SorashimaSoundLib](https://twitter.com/Melon_Soda24/status/1474394447924412419)
 
 ## 導入方法
-1. ver2.x.0を導入している場合は`mods`フォルダから`kamikawa2700zip`を削除する
-2. ダウンロードした`kamikawa2700.zip`または`Kamikawa2700_Cross-Seat_for1.12.2.zip`または`Kamikawa2700_Cross-Seat_for1.7.10.zip`を`mods`フォルダにコピー
+1. ver2.2.1以前を導入している場合は`mods`フォルダから`kamikawa2700zip`を削除する
+2. ダウンロードした`kamikawa2700.zip`を`mods`フォルダにコピー
 3. Minecraftを起動し、各モデルが追加されていることを確認
 
 ## 内容物
 モデル選択画面のタグ(kamikawa2700, kisaraki2021)で検索可能
 ### 電車モデル
-- 神河高速鉄道2700系 7種類 (ver2.x.0) (Mc1,Mc2,T,M1,M2,Tc,Tcw) 
-- 神河高速鉄道2700系 7種類 (ver2.x.1) 回転クロスシート版(Mc1,Mc2,T,M1,M2,Tc,Tcw)
+- 神河高速鉄道2700系 7種類 (Mc1,Mc2,T,M1,M2,Tc,Tcw) 
 
 ## 細かい仕様
 ### Sound
@@ -49,6 +48,12 @@
 のスクリプトを参考にしています。  
 
 # 
-## ライセンス
-本作品はCC BY-ND 4.0ライセンスの下で提供されます。
-https://creativecommons.org/licenses/by-nd/4.0/deed.ja
+## 利用規約
+利用規約がCC BY-ND4.0から大幅に変更となっております。
+ご注意ください。
+#### この利用規約は2022年4月29日よりV1.0からの全てのパックに適用されます。
+- パックを改造することを認めます。(KamikawaTrainKit-Aと統合)
+- 改造品を含むパックの再配布を認めます。
+- ただし、再配布する場合は競合を防ぐため、改変したモデル・テクスチャ・スクリプトのパスを変更してください。
+- 改造品を含むこのパックを使用したスクリーンショットの切り抜き素材の使用・炎や車が事故を起こしているエフェクトの付いたスクリーンショット・事故スクリーンショットの撮影には許可が必要です。この項目は事前予告なく変更される場合があります。
+- 利用規約を守れない方には神河車輛製作所の作品の利用停止措置を採る場合があります。それでも改善が見られない場合は日本国の法律に基づき法的措置をとる可能性があります 。ご注意ください。
